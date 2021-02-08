@@ -8,7 +8,7 @@
 
 namespace App\Connection;
 
-class MySQLDatabase extends DatabaseAbstract implements DatabaseInterface
+class PostgreDatabase extends DatabaseAbstract implements DatabaseInterface
 {
     private $conn;
 

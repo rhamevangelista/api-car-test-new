@@ -9,12 +9,13 @@ require 'vendor/autoload.php';
 
 use Dotenv\Dotenv;
 
-use App\Connection\MySQLDatabase;
+//use App\Connection\MySQLDatabase;
+use App\Connection\PostgreDatabase;
 
 $dotenv = Dotenv::createImmutable(__DIR__);
 $dotenv->load();
 
-$db = new MySQLDatabase(
+$db = new PostgreDatabase(
     $_ENV['DBTYPE'],
     $_ENV['HOST'],
     $_ENV['PORT'],
