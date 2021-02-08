@@ -38,7 +38,7 @@ Create a Record Endpoint
 ```bash
 POST https://<url>/car
 
-Form Data:
+Form Data:  (should be in RAW, JSON)
 model_name
 model_type
 model_brand
@@ -50,7 +50,7 @@ Update a Record Endpoint
 ```bash
 PUT https://<url>/car
 
-Form Data:
+Form Data:  (should be in RAW, JSON)
 id
 model_name
 model_type
@@ -62,7 +62,4 @@ Delete a Record Endpoint
 
 ```bash
 DELETE https://<url>/car?id=<record-id>
-
-Form Data:
-id
 ```
