@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Connection;
+namespace App\Connection\InterfaceClass;
 
 interface DatabaseInterface
 {

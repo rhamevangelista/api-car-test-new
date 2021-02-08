@@ -38,7 +38,7 @@ Create a Record Endpoint
 ```bash
 POST https://<url>/car
 
-Form Data:  (should be in RAW, JSON)
+Form Data: (should be in RAW, JSON)
 model_name
 model_type
 model_brand

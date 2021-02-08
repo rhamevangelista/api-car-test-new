@@ -8,29 +8,12 @@
 
 namespace App\Connection;
 
+use App\Connection\AbstractClass\DatabaseAbstract;
+use App\Connection\InterfaceClass\DatabaseInterface;
+
 class PostgreDatabase extends DatabaseAbstract implements DatabaseInterface
 {
     private $conn;
-
-    public function __construct(
-        $db_type = "pgsql",
-        $host = "localhost",
-        $port = "5432",
-        $db_name = "test",
-        $username = "root",
-        $password = "",
-        $options = ""
-    ) {
-        parent::__construct(
-            $db_type,
-            $host,
-            $port,
-            $db_name,
-            $username,
-            $password,
-            $options
-        );
-    }
 
     public function connect()
     {

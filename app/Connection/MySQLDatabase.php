@@ -8,32 +8,12 @@
 
 namespace App\Connection;
 
-use App\Connection\DatabaseAbstract;
-use App\Connection\DatabaseInterface;
+use App\Connection\AbstractClass\DatabaseAbstract;
+use App\Connection\InterfaceClass\DatabaseInterface;
 
 class MySQLDatabase extends DatabaseAbstract implements DatabaseInterface
 {
     private $conn;
-
-    public function __construct(
-        $db_type = "mysql",
-        $host = "localhost",
-        $port = "3306",
-        $db_name = "test",
-        $username = "root",
-        $password = "",
-        $options = ""
-    ) {
-        parent::__construct(
-            $db_type,
-            $host,
-            $port,
-            $db_name,
-            $username,
-            $password,
-            $options
-        );
-    }
 
     public function connect()
     {

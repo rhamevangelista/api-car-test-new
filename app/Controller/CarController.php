@@ -13,7 +13,6 @@ class CarController
 {
     private $id;
     private $requestMethod;
-
     private $car;
 
     /**

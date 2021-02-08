@@ -6,13 +6,11 @@
  * CRUD Query template for different table Model
  */
 
-namespace App\Model;
+namespace App\Model\AbstractClass;
 
 abstract class Model
 {
     protected $conn;
-
-    protected $table;
 
     /**
      * Constructor
@@ -26,9 +24,8 @@ abstract class Model
      *
      * @access public
      */
-    public function __construct($db, $table)
+    public function __construct($db)
     {
         $this->conn = $db;
-        $this->table = $table;
     }
 }
